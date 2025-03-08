@@ -8,15 +8,15 @@ jobs:
   npm-build: 
     steps:
       - name: read repository content
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: install and build app
-      - run: |
+        run: |
           npm install
           npm run build
       
       - name: deploy
-      - uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: build
