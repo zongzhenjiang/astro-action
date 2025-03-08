@@ -6,6 +6,7 @@ permissions:
 
 jobs:
   npm-build: 
+    runs-on: ubuntu-latest
     steps:
       - name: read repository content
         uses: actions/checkout@v4
